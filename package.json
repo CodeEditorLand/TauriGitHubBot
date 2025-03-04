@@ -7,11 +7,11 @@
 		"type-check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"probot": "13.4.3"
+		"probot": "13.4.4"
 	},
 	"devDependencies": {
 		"@octokit/rest": "21.1.1",
 		"nock": "14.0.1",
-		"tsup": "8.3.6"
+		"tsup": "8.4.0"
 	}
 }
