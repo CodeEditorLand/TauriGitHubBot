@@ -1,12 +1,19 @@
 {
 	"compilerOptions": {
-		"target": "esnext",
-		"module": "esnext",
-		"strict": true,
+		"baseUrl": "./",
 		"esModuleInterop": true,
+		"module": "esnext",
 		"moduleResolution": "node",
+		"outDir": "Target",
 		"resolveJsonModule": true,
-		"skipLibCheck": true
+		"rootDir": "src",
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "esnext"
 	},
-	"include": ["src/**/*.ts"]
+	"extends": "@playform/build/tsconfig",
+	"include": [
+		"src/**/*.ts",
+		"src"
+	]
 }
