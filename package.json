@@ -34,7 +34,7 @@
 	},
 	"devDependencies": {
 		"@octokit/rest": "21.1.1",
-		"@playform/build": "0.2.1",
+		"@playform/build": "0.2.2",
 		"nock": "14.0.2",
 		"tsup": "8.4.0"
 	},
