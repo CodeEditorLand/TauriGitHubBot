@@ -1,44 +1,35 @@
 {
-	"name": "@codeeditorland/github-bot",
-	"version": "0.0.1",
-	"private": false,
-	"description": "A GitHub bot for tauri-apps org to automate various tasks and intended to used only by tauri-apps org members.",
-	"keywords": [
-		"codeeditorland",
-		"land",
-		"playform"
-	],
-	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/TauriGitHubBot#readme",
-	"bugs": {
-		"url": "HTTPS://GitHub.Com/CodeEditorLand/TauriGitHubBot/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+HTTPS://github.com/CodeEditorLand/TauriGitHubBot.git"
-	},
-	"license": "SEE LICENSE IN LICENSE",
-	"author": {
-		"name": "Source 🖋️ Open 👐🏻",
-		"email": "Source/Open@Editor.Land",
-		"url": "HTTPS://Editor.Land"
-	},
-	"type": "module",
-	"scripts": {
-		"build": "tsup src/index.ts --clean",
-		"prepublishOnly": "Build 'Source/**/*.ts'",
-		"start": "probot run ./dist/index.js",
-		"type-check": "tsc --noEmit"
-	},
-	"dependencies": {
-		"probot": "13.4.5"
-	},
-	"devDependencies": {
-		"@octokit/rest": "21.1.1",
-		"@playform/build": "0.2.3",
-		"nock": "14.0.4",
-		"tsup": "8.4.0"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "tauri-github-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A GitHub bot for tauri-apps org to automate various tasks and intended to used only by tauri-apps org members.",
+  "license": "MIT OR Apache-2.0",
+  "homepage": "https://github.com/tauri-apps/tauri-github-bot",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app",
+    "tauri-apps"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --clean",
+    "start": "probot run ./dist/index.js",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write --end-of-line=auto \"./**/*.{js,ts,json}\" --ignore-path .gitignore",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "probot": "13.3.8"
+  },
+  "devDependencies": {
+    "@octokit/rest": "21.0.2",
+    "nock": "13.5.5",
+    "prettier": "3.3.3",
+    "tsup": "8.3.0",
+    "typescript": "5.6.2",
+    "vitest": "2.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
