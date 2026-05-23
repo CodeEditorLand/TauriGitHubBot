@@ -19,15 +19,15 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "probot": "13.4.7"
+    "probot": "14.3.2"
   },
   "devDependencies": {
-    "@octokit/rest": "21.1.1",
-    "nock": "14.0.10",
-    "prettier": "3.6.2",
-    "tsup": "8.5.0",
-    "typescript": "5.9.3",
-    "vitest": "4.0.4"
+    "@octokit/rest": "22.0.1",
+    "nock": "14.0.15",
+    "prettier": "3.8.3",
+    "tsup": "8.5.1",
+    "typescript": "6.0.3",
+    "vitest": "4.1.7"
   },
   "engines": {
     "node": ">=18.0.0"
